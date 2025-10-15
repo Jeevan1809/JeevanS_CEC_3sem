@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mini BookMyShow</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+
+    <style>
+        body {
+            background-image: url('imax.jpg');
+             background-repeat: no-repeat;
+            background-position:initial;
+        }
+    </style>    <h1>BookMyShow</h1>
+  </header>
+
+  <main>
+    
+    <section id="movies">
+      <h2>Now Showing</h2>
+      <div class="movie-list"></div>
+    </section>
+
+    <section id="showtimes" class="hidden">
+      <h2>Select Showtime</h2>
+      <div class="showtime-list"></div>
+      <button id="backToMovies">Back to Movies</button>
+    </section>
+
+    <section id="seatSelection" class="hidden">
+      <h2>Select Seats</h2>
+      <div class="seat-grid"></div>
+      <div class="seat-info">
+        <span>Selected: <span id="selectedCount">0</span></span>
+        <span>Total: ₹<span id="totalPrice">0</span></span>
+        <button id="confirmBooking">Confirm Booking</button>
+      </div>
+      <button id="backToShowtimes">Back to Showtimes</button>
+    </section>
+    
+    <section id="confirmation" class="hidden">
+      <h2>Booking Confirmed!</h2>
+      <p>Your seats are booked.</p>
+      <button id="goHome">Home</button>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
