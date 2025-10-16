@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Temperature Converter</h3>
+    <div class="container">
+        <input type="number" id="temp" class="form-control"placeholder="Enter temperature">
+        <div class="mt-2">
+            <button class="btn btn-secondary"onclick="toC()">To Celsius</button>
+            <button class="btn btn-secondary"onclick="toF()">To Fahrenate</button>
+        </div>
+        <input type="text" id="res"class="form-control mt-2"placeholder="Result">
+         </div> 
+        <script>
+            function toC(){
+                let f= +document.getElementById("temp").value;
+                document.getElementById("res").value=((f-32)*5/9).toFixed(2)+" C";
+            }
+            function toF(){
+                let c= +document.getElementById("temp").value;
+                document.getElementById("res").value=((c*9/5)+32).toFixed(2)+" F";
+            }
+        </script>
+      
+</body>
+</html>
